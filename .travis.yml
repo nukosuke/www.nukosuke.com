@@ -1,0 +1,17 @@
+language: node_js
+node_js: 8.11.3 # LTS
+sudo: false
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  repo: nukosuke.github.io
+  target-branch: master
+  local-dir: public
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  committer-from-gh: true
+  on:
+    branch: master
