@@ -11,7 +11,7 @@ script:
 
 deploy:
   provider: pages
-  repo: nukosuke.github.io
+  repo: nukosuke/nukosuke.github.io
   target-branch: master
   local-dir: public
   skip-cleanup: true
