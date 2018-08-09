@@ -1,11 +1,6 @@
-<p align="center">
-  <a href="https://next.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# www.nukosuke.com
+
+[![Build Status](https://travis-ci.org/nukosuke/www.nukosuke.com.svg?branch=master)](https://travis-ci.org/nukosuke/www.nukosuke.com)
 
 Kick off your project with this default boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. 
 
