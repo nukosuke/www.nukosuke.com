@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
-import pic01 from '../assets/images/pic01.jpg'
+import avatar from '../assets/images/avatar.jpg'
 
 class Index extends React.Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class Index extends React.Component {
                 <p>株式会社ミクシィ, XFLAGスタジオでCRE (Customer Reliability Engieer)をやっています。
                   業務では主にサーバサイドを担当していますが、実はTypeScriptが好きです。</p>
               </div>
-              <span className="image"><img src={pic01} alt="" /></span>
+              <span className="image"><img src={avatar} alt="" /></span>
             </div>
           </section>
 
