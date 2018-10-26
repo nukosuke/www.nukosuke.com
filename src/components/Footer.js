@@ -6,17 +6,19 @@ import logo from '../assets/images/logo.svg';
 const Footer = (props) => (
     <footer id="footer">
         <section>
-            <h2>Aliquam sed mauris</h2>
-            <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+            <h2>ブログ</h2>
+            <p>日々の作業ログや技術ネタについて書いています。もしよければのぞいてみてください (*ΦωΦ*)</p>
             <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li><a href="https://nukosuke.hatenablog.jp" className="button">&raquo; のぞいてみる</a></li>
             </ul>
         </section>
         <section>
             <h2>Info</h2>
             <dl className="alt">
-                <dt>Workplace</dt>
-                <dd>Shibuya &bull; Tokyo &bull; Japan</dd>
+                <dt><i class="fa fa-building"></i> Office</dt>
+                <dd>渋谷 &bull; 東京</dd>
+                <dt><i class="fa fa-home"></i> Home</dt>
+                <dd>川崎 &bull; 神奈川</dd>
             </dl>
             <ul className="icons">
                 <li><a href="https://twitter.com/pg_nukosuke" className="icon fa-twitter alt"><span className="label">Twitter</span></a></li>
