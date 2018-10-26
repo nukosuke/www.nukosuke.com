@@ -5,6 +5,7 @@ import Waypoint from 'react-waypoint'
 
 import Layout from '../components/layout'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 import pic01 from '../assets/images/pic01.jpg'
 
@@ -145,9 +146,8 @@ class Index extends React.Component {
               </ul>
             </footer>
           </section>
-
+          <Footer />
         </div>
-
       </Layout>
     )
   }
