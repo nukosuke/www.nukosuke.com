@@ -29,7 +29,7 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="じぶん α ver" />
+        <Helmet title="じぶん β" />
 
         <Header />
 

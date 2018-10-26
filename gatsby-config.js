@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "じぶん α ver - nukosuke's web",
+    title: "じぶん β - nukosuke's web",
     author: "nukosuke",
     description: "ぬこすけのポートフォリオです"
   },
