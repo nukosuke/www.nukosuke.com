@@ -24,7 +24,7 @@ const Footer = (props) => (
                 <li><a href="https://medium.com/@nukosuke" className="icon fa-medium alt"><span className="label">Medium</span></a></li>
             </ul>
         </section>
-        <p className="copyright">&copy; nukosuke.com. Designed by <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p className="copyright">&copy; nukosuke.com</p>
     </footer>
 )
 
