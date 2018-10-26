@@ -45,23 +45,35 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>ぬこすけ</h2>
                 </header>
-                <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-                adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-                Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-                <ul className="actions">
-                  <li><Link to="/generic" className="button">Learn More</Link></li>
-                </ul>
+                <p>株式会社ミクシィ, XFLAGスタジオでCRE (Customer Reliability Engieer)をやっています。
+                  業務では主にサーバサイドを担当していますが、実はTypeScriptが好きです。</p>
               </div>
               <span className="image"><img src={pic01} alt="" /></span>
             </div>
           </section>
 
-          <section id="first" className="main special">
+          <section id="career" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>経歴</h2>
             </header>
+            <table>
+              <tbody>
+                <tr>
+                  <td><b>2011-2015</b></td>
+                  <td>立命館大学 情報理工学部 情報システム学科</td>
+                </tr>
+                <tr>
+                  <td><b>2015-2017</b></td>
+                  <td>奈良先端科学技術大学院大学(NAIST) 情報科学研究科</td>
+                </tr>
+                <tr>
+                  <td><b>2017-</b></td>
+                  <td>株式会社ミクシィ XFLAGスタジオ</td>
+                </tr>
+              </tbody>
+            </table>
             <ul className="features">
               <li>
                 <span className="icon major style1 fa-code"></span>
@@ -86,9 +98,9 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="second" className="main special">
+          <section id="links" className="main special">
             <header className="major">
-              <h2>Ipsum consequat</h2>
+              <h2>リンク</h2>
               <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
               posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
             </header>
@@ -122,16 +134,14 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="cta" className="main special">
+          <section id="contact" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Contact</h2>
+              <p>お問い合わせはこちらからお願いします。</p>
             </header>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button special">Get Started</Link></li>
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li><a href="https://goo.gl/forms/nlxW5cQE2R2xgLJ03" className="button">問い合わせフォーム</a></li>
               </ul>
             </footer>
           </section>
