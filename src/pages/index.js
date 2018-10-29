@@ -137,7 +137,7 @@ class Index extends React.Component {
 
           <section id="contact" className="main special">
             <header className="major">
-              <h2>Contact</h2>
+              <h2>お問い合わせ</h2>
               <p>お問い合わせはこちらからお願いします。</p>
             </header>
             <footer className="major">
