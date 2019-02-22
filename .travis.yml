@@ -11,11 +11,8 @@ script:
 
 deploy:
   provider: pages
-  repo: nukosuke/nukosuke.github.io
-  target-branch: master
   local-dir: public
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  committer-from-gh: true
   on:
     branch: master
