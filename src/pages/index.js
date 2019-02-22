@@ -1,20 +1,20 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
-import { Waypoint } from 'react-waypoint'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Helmet from 'react-helmet';
+import { Waypoint } from 'react-waypoint';
 
-import Layout from '../components/layout'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Nav from '../components/Nav'
-import avatar from '../assets/images/avatar.jpg'
+import Layout from '../components/layout';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Nav from '../components/Nav';
+import avatar from '../assets/images/avatar.jpg';
 
 class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       stickyNav: false
-    }
+    };
   }
 
   _handleWaypointEnter= () => {
@@ -26,12 +26,15 @@ class Index extends React.Component {
   }
 
   render() {
-
+    const { siteMetadata } = this.props.data.site;
     return (
       <Layout>
-        <Helmet title="じぶん β" />
+        <Helmet title={siteMetadata.title} />
 
-        <Header />
+        <Header
+          title={siteMetadata.title}
+          description={siteMetadata.description}
+        />
 
         <Waypoint
           onEnter={this._handleWaypointEnter}
@@ -46,7 +49,7 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>ぬこすけ</h2>
+                  <h2>{siteMetadata.author}</h2>
                 </header>
                 <p>株式会社ミクシィ, XFLAGスタジオでCRE (Customer Reliability Engieer)をやっています。
                   業務では主にサーバサイドを担当していますが、実はTypeScriptが好きです。</p>
@@ -149,8 +152,18 @@ class Index extends React.Component {
           <Footer />
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title description author
+      }
+    }
+  }
+`;

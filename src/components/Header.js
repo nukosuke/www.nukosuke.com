@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Header = (props) => (
     <header id="header" className="alt">
-        <h1><b>じぶん β</b></h1>
-        <p><b>nukosuke's web</b></p>
+        <h1><b>{props.title}</b></h1>
+        <p><b>{props.description}</b></p>
     </header>
-)
+);
 
-export default Header
+export default Header;
