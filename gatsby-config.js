@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "じぶん β - nukosuke's web",
-    author: "nukosuke",
-    description: "ぬこすけのポートフォリオです"
+    title: "じぶん β",
+    author: "ぬこすけ",
+    description: "nukosuke's web"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +19,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/markdown`,
+        name: 'markdown-pages',
+      },
+    },
+    'gatsby-transformer-remark',
   ],
-}
+};
