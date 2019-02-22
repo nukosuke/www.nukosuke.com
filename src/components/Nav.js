@@ -4,27 +4,18 @@ import Scroll from './Scroll';
 
 const Nav = (props) => (
     <nav id="nav" className={props.sticky ? 'alt' : ''}>
-        <Scrollspy items={ ['intro', 'career', 'links', 'contact'] } currentClassName="is-active" offset={-300}>
-            <li>
-                <Scroll type="id" element="intro">
-                    <a href="#">自己紹介</a>
-                </Scroll>
-            </li>
-            <li>
-                <Scroll type="id" element="career">
-                    <a href="#">経歴</a>
-                </Scroll>
-            </li>
-            <li>
-                <Scroll type="id" element="links">
-                    <a href="#">リンク</a>
-                </Scroll>
-            </li>
-            <li>
-                <Scroll type="id" element="contact">
-                    <a href="#">お問い合わせ</a>
-                </Scroll>
-            </li>
+        <Scrollspy items={props.items.map(item => item.key)} currentClassName="is-active" offset={-300}>
+          {
+            props.items.map(item => {
+              return (
+                <li>
+                  <Scroll type="id" element={item.key}>
+                    <a href={`#${item.key}`}>{item.value}</a>
+                  </Scroll>
+                </li>   
+              );
+            })
+          }
         </Scrollspy>
     </nav>
 );
