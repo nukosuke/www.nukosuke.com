@@ -21,7 +21,7 @@ const Footer = (props) => (
         </section>
         <section>
           <h2>お問い合わせ</h2>
-          <form action="https://formspree.io/39.nuko+www@gmail.com">
+          <form action="https://formspree.io/39.nuko+www@gmail.com" method="POST">
             <label for="email">メールアドレス</label>
             <input type="email" name="email" required />
             <label for="email">本文</label>
