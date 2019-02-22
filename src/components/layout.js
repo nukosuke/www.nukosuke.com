@@ -1,12 +1,12 @@
-import React from 'react'
-import '../assets/scss/main.scss'
+import React from 'react';
+import '../assets/scss/main.scss';
 
 class Template extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       loading: 'is-loading'
-    }
+    };
   }
 
   componentDidMount () {
@@ -22,7 +22,7 @@ class Template extends React.Component {
   }
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return (
       <div className={`body ${this.state.loading}`}>
@@ -30,8 +30,8 @@ class Template extends React.Component {
           {children}
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Template
+export default Template;

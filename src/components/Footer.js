@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
 import logo from '../assets/images/logo.svg';
 
@@ -28,6 +28,6 @@ const Footer = (props) => (
         </section>
         <p className="copyright">&copy; nukosuke.com</p>
     </footer>
-)
+);
 
-export default Footer
+export default Footer;

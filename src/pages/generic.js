@@ -1,9 +1,9 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import Layout from '../components/layout'
-import HeaderGeneric from '../components/HeaderGeneric'
-import pic04 from '../assets/images/pic04.jpg'
+import Layout from '../components/layout';
+import HeaderGeneric from '../components/HeaderGeneric';
+import pic04 from '../assets/images/pic04.jpg';
 
 class Generic extends React.Component {
   render() {
@@ -23,8 +23,8 @@ class Generic extends React.Component {
           </section>
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default Generic
+export default Generic;

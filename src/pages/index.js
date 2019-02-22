@@ -1,20 +1,20 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
-import { Waypoint } from 'react-waypoint'
+import React from 'react';
+import { Link } from 'gatsby';
+import Helmet from 'react-helmet';
+import { Waypoint } from 'react-waypoint';
 
-import Layout from '../components/layout'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Nav from '../components/Nav'
-import avatar from '../assets/images/avatar.jpg'
+import Layout from '../components/layout';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Nav from '../components/Nav';
+import avatar from '../assets/images/avatar.jpg';
 
 class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       stickyNav: false
-    }
+    };
   }
 
   _handleWaypointEnter= () => {
@@ -149,8 +149,8 @@ class Index extends React.Component {
           <Footer />
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
