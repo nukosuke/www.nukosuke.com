@@ -6,13 +6,6 @@ import logo from '../assets/images/logo.svg';
 const Footer = (props) => (
     <footer id="footer">
         <section>
-            <h2>ブログ</h2>
-            <p>日々の作業ログや技術ネタについて書いています。もしよければのぞいてみてください (*ΦωΦ*)</p>
-            <ul className="actions">
-                <li><a href="https://nukosuke.hatenablog.jp" className="button">&raquo; のぞいてみる</a></li>
-            </ul>
-        </section>
-        <section>
             <h2>Info</h2>
             <dl className="alt">
                 <dt><i class="fa fa-building"></i> Office</dt>
@@ -26,7 +19,17 @@ const Footer = (props) => (
                 <li><a href="https://medium.com/@nukosuke" className="icon fa-medium alt"><span className="label">Medium</span></a></li>
             </ul>
         </section>
-        <p className="copyright">&copy; nukosuke.com</p>
+        <section>
+          <h2>お問い合わせ</h2>
+          <form action="https://formspree.io/39.nuko+www@gmail.com">
+            <label for="email">メールアドレス</label>
+            <input type="email" name="email" required />
+            <label for="email">本文</label>
+            <textarea name="body" required></textarea>
+            <input type="submit" name="送信" />
+          </form>
+        </section>
+        <p className="copyright">&copy; nukosuke.com (*ΦωΦ*)</p>
     </footer>
 );
 

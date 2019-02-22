@@ -39,20 +39,26 @@ class Index extends React.Component {
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
-        >
-        </Waypoint>
-        <Nav sticky={this.state.stickyNav} />
+        />
+        <Nav
+          sticky={this.state.stickyNav}
+          items={[
+              { key: 'intro', value: '自己紹介' },
+              { key: 'career', value: 'しごと' },
+              { key: 'links', value: 'リンク' },
+              { key: 'blog', value: '技術ブログ' }
+          ]}
+        />
 
         <div id="main">
-
           <section id="intro" className="main">
             <div className="spotlight">
               <div className="content">
                 <header className="major">
                   <h2>{siteMetadata.author}</h2>
                 </header>
-                <p>株式会社ミクシィ, XFLAGスタジオでCRE (Customer Reliability Engieer)をやっています。
-                  業務では主にサーバサイドを担当していますが、実はTypeScriptが好きです。</p>
+                <p>株式会社ミクシィ, XFLAGスタジオでCRE (Customer Reliability Engieer) をやっています. </p>
+                <p>業務では主にサーバサイドを担当していますが, 実はTypeScriptが好きです.</p>
               </div>
               <span className="image"><img src={avatar} alt="" /></span>
             </div>
@@ -60,44 +66,29 @@ class Index extends React.Component {
 
           <section id="career" className="main special">
             <header className="major">
-              <h2>経歴</h2>
+              <h2>しごと</h2>
             </header>
-            <table>
-              <tbody>
-                <tr>
-                  <td><b>2011-2015</b></td>
-                  <td>立命館大学 情報理工学部 情報システム学科</td>
-                </tr>
-                <tr>
-                  <td><b>2015-2017</b></td>
-                  <td>奈良先端科学技術大学院大学(NAIST) 情報科学研究科</td>
-                </tr>
-                <tr>
-                  <td><b>2017-</b></td>
-                  <td>株式会社ミクシィ XFLAGスタジオ</td>
-                </tr>
-              </tbody>
-            </table>
+            <p>CREとしてカスタマーサポートシステムを開発したり, ログ調査を行ったりしています.</p>
             <ul className="features">
               <li>
                 <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <h3>フロントエンド</h3>
+                <p>JavaScript / TypeScript / React / Vue / Angular / jQuery</p>
               </li>
               <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style3 fa-server"></span>
+                <h3>サーバサイド</h3>
+                <p>Ruby / Rails / Go / Node.js / Elixir / Phoenix / AWS / GCP / Terraform / Docker</p>
               </li>
               <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style5 fa-keyboard-o"></span>
+                <h3>開発環境</h3>
+                <p>macOS / Ubuntu / CentOS / Emacs / eshell / fish</p>
               </li>
             </ul>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li><Link to="/career" className="button"><span className="fa fa-briefcase"></span> 学歴・職歴</Link></li>
               </ul>
             </footer>
           </section>
@@ -138,14 +129,15 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="contact" className="main special">
+          <section id="blog" className="main special">
             <header className="major">
-              <h2>お問い合わせ</h2>
-              <p>お問い合わせはこちらからお願いします。</p>
+              <h2>技術ブログ</h2>
+              <p>日々の作業ログや技術ネタについて書いています. もしよければのぞいてみてください.</p>
             </header>
             <footer className="major">
               <ul className="actions">
-                <li><a href="https://goo.gl/forms/nlxW5cQE2R2xgLJ03" className="button">問い合わせフォーム</a></li>
+                <li><a href="https://blog.nukosuke.com" className="button"><span className="fa fa-book"></span> ブログ</a></li>
+                <li><a href="https://nukosuke.hatenablog.jp" className="button"><span className="fa fa-book"></span> 旧ブログ</a></li>
               </ul>
             </footer>
           </section>

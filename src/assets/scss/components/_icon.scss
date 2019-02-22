@@ -21,7 +21,8 @@
 
 		&.major {
 			border: solid 1px;
-			display: inline-block;
+      box-shadow: 1px 1px 4px 1px;
+      display: inline-block;
 			border-radius: 100%;
 			padding: 0.65em;
 			margin: 0 0 _size(element-margin) 0;
@@ -34,7 +35,7 @@
 				height: 2.25em;
 				line-height: 2.2em;
 				border-radius: 100%;
-				border: solid 1px;
+				border: dashed 2px;
 				text-align: center;
 			}
 		}
