@@ -6,7 +6,7 @@ import logo from '../assets/images/logo.svg';
 const Footer = (props) => (
     <footer id="footer">
         <section>
-            <h2>Info</h2>
+            <header className="major"><h2 className="major">Info</h2></header>
             <dl className="alt">
                 <dt><i class="fa fa-building"></i> Office</dt>
                 <dd>渋谷 &bull; 東京</dd>
@@ -20,7 +20,7 @@ const Footer = (props) => (
             </ul>
         </section>
         <section>
-          <h2>お問い合わせ</h2>
+          <header className="major"><h2>お問い合わせ</h2></header>
           <form action="https://formspree.io/39.nuko+www@gmail.com" method="POST">
             <label for="email">メールアドレス</label>
             <input type="email" name="email" required />
