@@ -1,7 +1,6 @@
 # www.nukosuke.com
 
 [![Build Status](https://travis-ci.org/nukosuke/www.nukosuke.com.svg?branch=master)](https://travis-ci.org/nukosuke/www.nukosuke.com)
-[![Greenkeeper badge](https://badges.greenkeeper.io/nukosuke/www.nukosuke.com.svg)](https://greenkeeper.io/)
 
 1.  **Start developing.**
 
