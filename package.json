@@ -5,10 +5,10 @@
   "author": "nukosuke",
   "private": true,
   "dependencies": {
-    "gatsby": "2.3.11",
+    "gatsby": "2.3.13",
     "gatsby-plugin-manifest": "2.0.26",
     "gatsby-plugin-offline": "2.0.25",
-    "gatsby-plugin-react-helmet": "3.0.11",
+    "gatsby-plugin-react-helmet": "3.0.12",
     "gatsby-plugin-sass": "2.0.11",
     "gatsby-source-filesystem": "2.0.28",
     "gatsby-transformer-remark": "2.3.8",
