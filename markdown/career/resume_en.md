@@ -1,5 +1,5 @@
 ---
-path: /resume
+path: /career/resume
 title: Resume
 ---
 
