@@ -24,7 +24,7 @@ Customer Reliability Engineer
 
 - Develop and improve support console for products.
 - Investigate bugs according to user inquiries and fix them.
-- API integrations 
+- API integrations with Zendesk
 
 ## EDUCATION
 - B.A in Information Science and Engineering, Ritsumeikan University - Shiga, Japan 2015
