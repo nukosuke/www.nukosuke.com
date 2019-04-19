@@ -18,4 +18,4 @@ Customer Reliability Engineer
 - ZendeskのAPI連携システムの構築
 
 ## 学歴
-- 立命館大学 情報理工学部 情報システム学科 - 2015
+- 学士号 立命館大学 情報理工学部 情報システム学科 - 2015
