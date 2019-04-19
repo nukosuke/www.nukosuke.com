@@ -1,4 +1,5 @@
 ---
+path: /career
 title: 経歴
 ---
 
