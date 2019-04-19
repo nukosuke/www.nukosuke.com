@@ -30,5 +30,5 @@ Customer Reliability Engineer
 - B.A in Information Science and Engineering, Ritsumeikan University - Shiga, Japan 2015
 
 ## LINKS
-- [GitHub](https://github.com/nukosuke)
-- [Tech Blog](https://blog.nukosuke.com)
+- GitHub - https://github.com/nukosuke
+- Tech Blog - https://blog.nukosuke.com
