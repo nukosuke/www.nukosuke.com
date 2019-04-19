@@ -1,12 +1,15 @@
 ---
-path: /career
-title: 経歴
+path: /resume
+title: レジュメ
 ---
 
 <div align='center'>
     <h1>田村 洋輔</h1>
     <p>Email: nukosuke@lavabit.com</p>
 </div>
+
+## 志望職種・動機
+現在のところ転職は考えておりません
 
 ## 職歴
 2017 - 現在  

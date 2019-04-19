@@ -1,6 +1,6 @@
 ---
-path: /career_en
-title: Creer
+path: /resume
+title: Resume
 ---
 
 <div align='center'>
