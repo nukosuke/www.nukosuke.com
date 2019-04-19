@@ -102,37 +102,10 @@ class Index extends React.Component {
               <h2>リンク</h2>
               <p>わたしに関連するリンク集です.</p>
             </header>
-            <ul className="statistics">
-              <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
-              </li>
-              <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
-              </li>
-              <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
-              </li>
-              <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
-              </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong></strong> Open Source
-              </li>
+            <ul>
+              <li><span className="fa fa-bug"></span><Link to='/events/bug-shooting-challenge'>不具合調査ワークショップ: Bug Shooting Challenge</Link></li>
             </ul>
-            <ul className="alt">
-            <li>hoge</li>
-            <li>hugaa</li>
-            </ul>
-            <p className="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
             <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
             </footer>
           </section>
 
