@@ -58,4 +58,27 @@
 		@include breakpoint(xsmall) {
 			@include padding(2.5em, 1em);
 		}
+
+    ul.icons {
+      a {
+        background-color: white;
+      }
+    }
+
+    form {
+        input[type="email"], textarea {
+            background-color: white;
+
+        }
+        label {
+            margin-top: 8px;
+        }
+        button {
+            float: right;
+            margin-top: 16px;
+            background-color: #333;
+            color: white !important;
+            &:hover { background-color: #333; }
+        }
+    }
 	}
