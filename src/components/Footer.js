@@ -10,8 +10,6 @@ const Footer = (props) => (
             <dl className="alt">
                 <dt><i class="fa fa-building"></i> Office</dt>
                 <dd>渋谷 &bull; 東京</dd>
-                <dt><i class="fa fa-home"></i> Home</dt>
-                <dd>川崎 &bull; 神奈川</dd>
             </dl>
             <ul className="icons">
                 <li><a href="https://twitter.com/pg_nukosuke" className="icon fa-twitter alt"><span className="label">Twitter</span></a></li>
