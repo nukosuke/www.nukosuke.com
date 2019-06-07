@@ -8,7 +8,7 @@ const Footer = (props) => (
         <section>
             <header className="major"><h2 className="major">Info</h2></header>
             <dl className="alt">
-                <dt><i class="fa fa-building"></i> Office</dt>
+                <dt><i className="fa fa-building"></i> Office</dt>
                 <dd>渋谷 &bull; 東京</dd>
             </dl>
             <ul className="icons">
