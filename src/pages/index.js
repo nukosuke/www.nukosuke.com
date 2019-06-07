@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import avatar from '../assets/images/avatar.jpg';
+import Timeline from '../components/Timeline';
 
 class Index extends React.Component {
   constructor(props) {
@@ -53,7 +54,9 @@ class Index extends React.Component {
         <div id="main">
           <section id="intro" className="main">
             <div className="spotlight">
-              <span className="image left"><img src={avatar} alt="" /></span>
+              <span className="image left">
+                <img src={avatar} alt="" />
+              </span>
               <div className="content">
                 <header className="major">
                   <h2>{siteMetadata.author}</h2>
@@ -63,8 +66,20 @@ class Index extends React.Component {
                   <li><span className="fa fa-briefcase"></span>&nbsp;&nbsp;CRE; Customer Reliability Engieer</li>
                 </ul>
                 <p>業務では主にサーバサイドを担当していますが, 実はTypeScriptが好きです.</p>
+                <Timeline
+                  items={[
+                    { title: '2011-2015 立命館大学 情報理工学部 情報システム学科' },
+                    { title: '2015-2017 奈良先端科学技術大学院大学(NAIST) 情報科学研究科' },
+                    { title: '2017- 株式会社ミクシィ XFLAGスタジオ' },
+                  ]}
+                />
+                <footer className='major'>
+                  <p style={{textAlign: 'right'}}>
+                    Resume:
+                    [<Link to="/career/resume">JP</Link>|<Link to="/career/resume_en">EN</Link>]
+                  </p>
+                </footer>
               </div>
-
             </div>
           </section>
 
@@ -90,11 +105,6 @@ class Index extends React.Component {
                 <p>macOS / Ubuntu / CentOS / Emacs / eshell / fish</p>
               </li>
             </ul>
-            <footer className="major">
-              <ul className="actions">
-                <li><Link to="/career" className="button"><span className="fa fa-briefcase"></span> 学歴・職歴</Link></li>
-              </ul>
-            </footer>
           </section>
 
           <section id="links" className="main special">
