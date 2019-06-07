@@ -58,4 +58,10 @@
 		@include breakpoint(xsmall) {
 			@include padding(2.5em, 1em);
 		}
+
+    ul.icons {
+      a {
+        background-color: white;
+      }
+    }
 	}
