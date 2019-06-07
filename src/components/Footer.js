@@ -26,7 +26,7 @@ const Footer = (props) => (
             <input type="email" name="email" required />
             <label for="email">本文</label>
             <textarea name="body" required></textarea>
-            <input type="submit" name="送信" />
+            <button type="submit">送信</button>
           </form>
         </section>
         <p className="copyright">&copy; nukosuke.com (*ΦωΦ*)</p>
