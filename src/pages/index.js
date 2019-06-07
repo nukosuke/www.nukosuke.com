@@ -70,7 +70,7 @@ class Index extends React.Component {
                   items={[
                     { title: '2011-2015 立命館大学 情報理工学部 情報システム学科' },
                     { title: '2015-2017 奈良先端科学技術大学院大学(NAIST) 情報科学研究科' },
-                    { title: '2017- 株式会社ミクシィ XFLAGスタジオ' },
+                    { title: '2017-現在 株式会社ミクシィ XFLAGスタジオ' },
                   ]}
                 />
                 <footer className='major'>
