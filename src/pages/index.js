@@ -46,7 +46,6 @@ class Index extends React.Component {
           items={[
               { key: 'intro', value: '自己紹介' },
               { key: 'career', value: 'しごと' },
-              { key: 'links', value: 'リンク' },
               { key: 'blog', value: '技術ブログ' }
           ]}
         />
@@ -63,7 +62,7 @@ class Index extends React.Component {
                 </header>
                 <ul className="icons" style={{fontSize: 14}}>
                   <li><span className="fa fa-building-o"></span>&nbsp;&nbsp;mixi inc.</li>
-                  <li><span className="fa fa-briefcase"></span>&nbsp;&nbsp;CRE; Customer Reliability Engieer</li>
+                  <li><span className="fa fa-briefcase"></span>&nbsp;&nbsp;Engieer</li>
                 </ul>
                 <p>業務では主にサーバサイドを担当していますが, 実はTypeScriptが好きです.</p>
                 <Timeline
@@ -87,7 +86,7 @@ class Index extends React.Component {
             <header className="major">
               <h2>しごと</h2>
             </header>
-            <p>CREとしてカスタマーサポートシステムを開発したり, ログ調査を行ったりしています.</p>
+            <p>社内ID・決済基盤や前払い式決済アプリの開発、運用に携っています.</p>
             <ul className="features">
               <li>
                 <span className="icon major style1 fa-code"></span>
@@ -105,18 +104,6 @@ class Index extends React.Component {
                 <p>macOS / Ubuntu / CentOS / Emacs / eshell / fish</p>
               </li>
             </ul>
-          </section>
-
-          <section id="links" className="main special">
-            <header className="major">
-              <h2>リンク</h2>
-              <p>わたしに関連するリンク集です.</p>
-            </header>
-            <ul>
-              <li><span className="fa fa-bug"></span><Link to='/events/bug-shooting-challenge'>不具合調査ワークショップ: Bug Shooting Challenge</Link></li>
-            </ul>
-            <footer className="major">
-            </footer>
           </section>
 
           <section id="blog" className="main special">
