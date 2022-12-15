@@ -1,7 +1,7 @@
 {
   "name": "www.nukosuke.com",
   "description": "nukosuke's web",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "nukosuke",
   "private": true,
   "dependencies": {
@@ -26,8 +26,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
