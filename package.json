@@ -5,7 +5,7 @@
   "author": "nukosuke",
   "private": true,
   "dependencies": {
-    "gatsby": "2.32.13",
+    "gatsby": "5.3.2",
     "gatsby-plugin-manifest": "2.4.28",
     "gatsby-plugin-offline": "3.2.27",
     "gatsby-plugin-react-helmet": "3.3.10",
