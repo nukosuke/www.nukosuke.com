@@ -44,7 +44,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
     throw result.errors
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data!.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: genericTemplate,
