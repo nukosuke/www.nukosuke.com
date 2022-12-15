@@ -1,8 +1,10 @@
-module.exports = {
+import type { GatsbyConfig } from 'gatsby';
+
+const config: GatsbyConfig = {
   siteMetadata: {
-    title: "じぶん β",
-    author: "ぬこすけ",
-    description: "nukosuke's web"
+    title: 'じぶん β',
+    author: 'ぬこすけ',
+    description: "nukosuke's web",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -30,3 +32,5 @@ module.exports = {
     'gatsby-transformer-remark',
   ],
 };
+
+export default config;
