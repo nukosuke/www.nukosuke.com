@@ -1,5 +1,5 @@
 ---
-path: /generic
+path: /generic/
 date: 2019-02-23
 title: generic article
 ---
