@@ -21,7 +21,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
   graphql,
 }) => {
   const { createPage } = actions;
-  const genericTemplate = path.resolve(`src/templates/genericTemplate.js`);
+  const genericTemplate = path.resolve(`src/templates/genericTemplate.tsx`);
 
   const result = await graphql<Result>(`
     {
