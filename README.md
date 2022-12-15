@@ -1,6 +1,5 @@
 # www.nukosuke.com
-
-[![Build Status](https://travis-ci.org/nukosuke/www.nukosuke.com.svg?branch=master)](https://travis-ci.org/nukosuke/www.nukosuke.com)
+[![Deploy Gatsby site to Pages](https://github.com/nukosuke/www.nukosuke.com/actions/workflows/gatsby.yml/badge.svg)](https://github.com/nukosuke/www.nukosuke.com/actions/workflows/gatsby.yml)
 
 1.  **Start developing.**
 
