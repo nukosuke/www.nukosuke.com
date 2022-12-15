@@ -1,10 +1,11 @@
 import React from 'react';
-import { Scrollspy } from '@makotot/ghostui';
+//import { Scrollspy } from '@makotot/ghostui';
+import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
 type NavProps = {
   sticky: boolean
-  items: { key: string, value: string }[]
+  items: { key: string, value: React.ReactNode }[]
 }
 
 const Nav: React.FC<NavProps> = (props) => (

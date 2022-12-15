@@ -1,15 +1,12 @@
 import smoothscroll from 'smoothscroll-polyfill';
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
-
-const Element = (props) => { return (props.children); };
 
 type ScrollProps = {
   type: string
   element: string
   offset: number
-  timeout: number
-  children: any
+  timeout: null | undefined
+  children: React.ReactNode
 }
 
 const Scroll: React.FC<ScrollProps> = (props) => {
@@ -17,9 +14,9 @@ const Scroll: React.FC<ScrollProps> = (props) => {
     smoothscroll.polyfill();
   }, [])
 
-  const handleClick = (e: Event) => {
+  const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    let elem: Element?= null;
+    let elem: Element | null = null;
     let scroll = true;
     const { type, element, offset, timeout } = props;
     if (type && element) {
@@ -35,7 +32,7 @@ const Scroll: React.FC<ScrollProps> = (props) => {
         default:
       }
     }
-    scroll ? (this.scrollTo(elem, offset, timeout)) : console.log(`Element not found: ${element}`); // eslint-disable-line
+    scroll ? (scrollTo(elem!, offset, timeout)) : console.log(`Element not found: ${element}`); // eslint-disable-line
   }
 
   const scrollTo = (element: Element, offSet = 0, timeout = null) => {
@@ -48,13 +45,13 @@ const Scroll: React.FC<ScrollProps> = (props) => {
   }
 
   return (
-    <Element>
-      {typeof (this.props.children) === 'object' ? (
-        React.cloneElement(this.props.children, { onClick: this.handleClick })
+    <>
+      {typeof (props.children) === 'object' ? (
+        React.Children.map(props.children as React.ReactElement[], (child: React.ReactElement) => React.cloneElement(child, { onClick: handleClick }))
       ) : (
-        <span onClick={this.handleClick}>{this.props.children}</span>
+        <span onClick={handleClick}>{props.children}</span>
       )}
-    </Element>
+    </>
   );
 }
 
