@@ -40,6 +40,10 @@ export const createPages: GatsbyNode['createPages'] = async ({
     }
   `);
 
+  if (result.errors) {
+    return result.errors
+  }
+
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
