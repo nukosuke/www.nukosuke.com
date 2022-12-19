@@ -51,7 +51,7 @@
 					line-height: 2.25em;
 					padding: 0 1.25em;
 					border: 0;
-					border-radius: _size(border-radius);
+					border-radius: calc(#{_size(element-height)} / 2);
 					box-shadow: inset 0 0 0 1px transparent;
 
 					&:hover {
@@ -65,7 +65,9 @@
 				}
 				&.is-active {
 					a {
-						background-color: _palette(invert, bg);
+            color: _palette(fg);
+            font-weight: 400;
+						background-color: transparentize(_palette(accent6), 0.05);
 						box-shadow: none;
 					}
 				}
