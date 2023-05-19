@@ -64,7 +64,7 @@ const Index: React.FC<PageProps<DataProps>> = (props) => {
               </header>
               <ul className="icons" style={{ fontSize: 14 }}>
                 <li><span className="fa fa-building-o"></span>&nbsp;&nbsp;mixi inc.</li>
-                <li><span className="fa fa-briefcase"></span>&nbsp;&nbsp;Engieer</li>
+                <li><span className="fa fa-briefcase"></span>&nbsp;&nbsp;Engineer</li>
               </ul>
               <p>業務では主にサーバサイドを担当していますが, 実はTypeScriptが好きです.</p>
               <Timeline
