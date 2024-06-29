@@ -13,7 +13,7 @@
     "gatsby-source-filesystem": "5.11.0",
     "gatsby-transformer-remark": "6.12.3",
     "gatsby-transformer-yaml": "5.13.1",
-    "react": "18.2.0",
+    "react": "18.3.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
     "react-scroll-to-element": "0.2.0",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.2.1",
-    "@types/react": "^18.0.26",
+    "@types/react": "^18.3.1",
     "@types/react-dom": "^18.2.4",
     "prettier": "3.3.2",
     "typescript": "^5.4.5"
