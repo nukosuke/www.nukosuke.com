@@ -2,17 +2,17 @@ import smoothscroll from 'smoothscroll-polyfill';
 import React, { useEffect } from 'react';
 
 type ScrollProps = {
-  type: string
-  element: string
-  offset: number
-  timeout: null | undefined
-  children: React.ReactNode
-}
+  type: string;
+  element: string;
+  offset: number;
+  timeout: null | undefined;
+  children: React.ReactNode;
+};
 
 const Scroll: React.FC<ScrollProps> = (props) => {
   useEffect(() => {
     smoothscroll.polyfill();
-  }, [])
+  }, []);
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -32,27 +32,37 @@ const Scroll: React.FC<ScrollProps> = (props) => {
         default:
       }
     }
-    scroll ? (scrollTo(elem!, offset, timeout)) : console.log(`Element not found: ${element}`); // eslint-disable-line
-  }
+    scroll
+      ? scrollTo(elem!, offset, timeout)
+      : console.log(`Element not found: ${element}`); // eslint-disable-line
+  };
 
   const scrollTo = (element: Element, offSet = 0, timeout = null) => {
-    const elemPos = element ? element.getBoundingClientRect().top + window.pageYOffset : 0;
+    const elemPos = element
+      ? element.getBoundingClientRect().top + window.pageYOffset
+      : 0;
     if (timeout) {
-      setTimeout(() => { window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' }); }, timeout);
+      setTimeout(() => {
+        window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
+      }, timeout);
     } else {
       window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
     }
-  }
+  };
 
   return (
     <>
-      {typeof (props.children) === 'object' ? (
-        React.Children.map(props.children as React.ReactElement[], (child: React.ReactElement) => React.cloneElement(child, { onClick: handleClick }))
+      {typeof props.children === 'object' ? (
+        React.Children.map(
+          props.children as React.ReactElement[],
+          (child: React.ReactElement) =>
+            React.cloneElement(child, { onClick: handleClick })
+        )
       ) : (
         <span onClick={handleClick}>{props.children}</span>
       )}
     </>
   );
-}
+};
 
 export default Scroll;

@@ -6,15 +6,15 @@ import HeaderGeneric from '../components/HeaderGeneric';
 
 type DataProps = {
   markdownRemark: {
-    html: string
+    html: string;
     frontmatter: {
-      date: string
-      path: string
-      title: string
-      subtitle: string
-    }
-  }
-}
+      date: string;
+      path: string;
+      title: string;
+      subtitle: string;
+    };
+  };
+};
 
 const Template: React.FC<PageProps<DataProps>> = (props) => {
   const { markdownRemark } = props.data;
@@ -33,7 +33,7 @@ const Template: React.FC<PageProps<DataProps>> = (props) => {
       </div>
     </Layout>
   );
-}
+};
 
 export default Template;
 
@@ -48,10 +48,10 @@ export const Head = (props: HeadProps<DataProps>) => (
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </>
-)
+);
 
 export const query = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
