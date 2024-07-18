@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import {
   FaBuilding,
+  FaBluesky,
   FaMastodon,
   FaXTwitter,
   FaGithub,
@@ -23,6 +24,11 @@ const Footer: React.FC = () => (
         <dd>Shibuya-ku Tokyo, Japan</dd>
       </dl>
       <ul className="icons">
+        <li>
+          <a href="https://bsky.app/profile/nukosuke.bsky.social">
+            <FaBluesky />
+          </a>
+        </li>
         <li>
           <a rel="me" href="https://mastodon.social/@nukosuke">
             <FaMastodon />
