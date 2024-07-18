@@ -1,5 +1,6 @@
+import * as React from 'react';
+import { useEffect } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
-import React, { useEffect } from 'react';
 
 type ScrollProps = {
   type: string;

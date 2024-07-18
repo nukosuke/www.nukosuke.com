@@ -1,12 +1,17 @@
-import React from 'react';
+import * as React from 'react';
 
-const Header = (props) => (
+type HeaderProps = {
+  title: string;
+  description: string;
+};
+
+const Header: React.FC<HeaderProps> = ({ title, description }) => (
   <header id="header" className="alt">
     <h1>
-      <b>{props.title}</b>
+      <b>{title}</b>
     </h1>
     <p>
-      <b>{props.description}</b>
+      <b>{description}</b>
     </p>
   </header>
 );

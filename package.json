@@ -31,7 +31,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier --write '**/*.(ts|tsx)'",
+    "format": "prettier --write '**/*.(ts|tsx|json)'",
     "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

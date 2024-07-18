@@ -1,9 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-const HeaderGeneric = (props) => (
+type HeaderGenericProps = {
+  title: string;
+  subtitle: string;
+};
+
+const HeaderGeneric: React.FC<HeaderGenericProps> = ({ title, subtitle }) => (
   <header id="header">
-    <h1>{props.title}</h1>
-    <p>{props.subtitle}</p>
+    <h1>{title}</h1>
+    <p>{subtitle}</p>
   </header>
 );
 

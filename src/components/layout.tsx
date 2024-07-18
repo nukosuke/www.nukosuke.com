@@ -1,35 +1,26 @@
-import React from 'react';
+import * as React from 'react';
+import { useState, useEffect } from 'react';
 import '../assets/scss/main.scss';
 
-class Template extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: 'is-loading',
-    };
-  }
+type TemplateProps = {
+  children: React.ReactNode;
+};
 
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' });
+const Template: React.FC<TemplateProps> = ({ children }) => {
+  const [loading, setLoading] = useState('is-loading');
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLoading('');
     }, 100);
-  }
+    return () => clearTimeout(timeoutId);
+  }, [setLoading]);
 
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-  }
-
-  render() {
-    const { children } = this.props;
-
-    return (
-      <div className={`body ${this.state.loading}`}>
-        <div id="wrapper">{children}</div>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={`body ${loading}`}>
+      <div id="wrapper">{children}</div>
+    </div>
+  );
+};
 
 export default Template;
