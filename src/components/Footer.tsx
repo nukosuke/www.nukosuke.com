@@ -1,11 +1,16 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'gatsby';
-import { FaMastodon, FaTwitter, FaGithub, FaMedium } from 'react-icons/fa';
+import {
+  FaBuilding,
+  FaMastodon,
+  FaXTwitter,
+  FaGithub,
+  FaMedium,
+} from 'react-icons/fa6';
 import { SiMatrix, SiQiita, SiZenn } from 'react-icons/si';
-
 import logo from '../assets/images/logo.svg';
 
-const Footer = (props) => (
+const Footer: React.FC = () => (
   <footer id="footer">
     <section>
       <header className="major">
@@ -13,7 +18,7 @@ const Footer = (props) => (
       </header>
       <dl className="alt">
         <dt>
-          <i className="fa fa-building"></i> Location
+          <FaBuilding /> Location
         </dt>
         <dd>Shibuya-ku Tokyo, Japan</dd>
       </dl>
@@ -24,8 +29,8 @@ const Footer = (props) => (
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/pg_nukosuke">
-            <FaTwitter />
+          <a href="https://x.com/pg_nukosuke">
+            <FaXTwitter />
           </a>
         </li>
         <li>
