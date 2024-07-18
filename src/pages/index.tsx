@@ -12,23 +12,23 @@ import Timeline from '../components/Timeline';
 type DataProps = {
   site: {
     siteMetadata: {
-      title: string
-      description: string
-      author: string
-    }
-  }
-}
+      title: string;
+      description: string;
+      author: string;
+    };
+  };
+};
 
 const Index: React.FC<PageProps<DataProps>> = (props) => {
-  const [stickyNav, setStickyNav] = useState<boolean>(false)
+  const [stickyNav, setStickyNav] = useState<boolean>(false);
 
   const _handleWaypointEnter = () => {
-    setStickyNav(false)
-  }
+    setStickyNav(false);
+  };
 
   const _handleWaypointLeave = () => {
-    setStickyNav(true)
-  }
+    setStickyNav(true);
+  };
 
   const { siteMetadata } = props.data.site;
 
@@ -39,16 +39,13 @@ const Index: React.FC<PageProps<DataProps>> = (props) => {
         description={siteMetadata.description}
       />
 
-      <Waypoint
-        onEnter={_handleWaypointEnter}
-        onLeave={_handleWaypointLeave}
-      />
+      <Waypoint onEnter={_handleWaypointEnter} onLeave={_handleWaypointLeave} />
       <Nav
         sticky={stickyNav}
         items={[
           { key: 'intro', value: '自己紹介' },
           { key: 'career', value: 'しごと' },
-          { key: 'blog', value: '技術ブログ' }
+          { key: 'blog', value: '技術ブログ' },
         ]}
       />
 
@@ -63,21 +60,34 @@ const Index: React.FC<PageProps<DataProps>> = (props) => {
                 <h2>{siteMetadata.author}</h2>
               </header>
               <ul className="icons" style={{ fontSize: 14 }}>
-                <li><span className="fa fa-building-o"></span>&nbsp;&nbsp;mixi inc.</li>
-                <li><span className="fa fa-briefcase"></span>&nbsp;&nbsp;Engineer</li>
+                <li>
+                  <span className="fa fa-building-o"></span>&nbsp;&nbsp;mixi
+                  inc.
+                </li>
+                <li>
+                  <span className="fa fa-briefcase"></span>&nbsp;&nbsp;Engineer
+                </li>
               </ul>
-              <p>業務では主にサーバサイドを担当していますが, 実はTypeScriptが好きです.</p>
+              <p>
+                業務では主にサーバサイドを担当していますが,
+                実はTypeScriptが好きです.
+              </p>
               <Timeline
                 items={[
-                  { title: '2011-2015 立命館大学 情報理工学部 情報システム学科' },
-                  { title: '2015-2017 奈良先端科学技術大学院大学(NAIST) 情報科学研究科' },
+                  {
+                    title: '2011-2015 立命館大学 情報理工学部 情報システム学科',
+                  },
+                  {
+                    title:
+                      '2015-2017 奈良先端科学技術大学院大学(NAIST) 情報科学研究科',
+                  },
                   { title: '2017-現在 株式会社ミクシィ XFLAGスタジオ' },
                 ]}
               />
-              <footer className='major'>
+              <footer className="major">
                 <p style={{ textAlign: 'right' }}>
-                  Resume:
-                  [<Link to="/career/resume">JP</Link>|<Link to="/career/resume_en">EN</Link>]
+                  Resume: [<Link to="/career/resume">JP</Link>|
+                  <Link to="/career/resume_en">EN</Link>]
                 </p>
               </footer>
             </div>
@@ -98,7 +108,10 @@ const Index: React.FC<PageProps<DataProps>> = (props) => {
             <li>
               <span className="icon major style3 fa-server"></span>
               <h3>サーバサイド</h3>
-              <p>Ruby / Rails / Go / Node.js / Elixir / Phoenix / AWS / GCP / Terraform / Docker</p>
+              <p>
+                Ruby / Rails / Go / Node.js / Elixir / Phoenix / AWS / GCP /
+                Terraform / Docker
+              </p>
             </li>
             <li>
               <span className="icon major style5 fa-keyboard-o"></span>
@@ -111,12 +124,23 @@ const Index: React.FC<PageProps<DataProps>> = (props) => {
         <section id="blog" className="main special">
           <header className="major">
             <h2>技術ブログ</h2>
-            <p>日々の作業ログや技術ネタについて書いています. もしよければのぞいてみてください.</p>
+            <p>
+              日々の作業ログや技術ネタについて書いています.
+              もしよければのぞいてみてください.
+            </p>
           </header>
           <footer className="major">
             <ul className="actions">
-              <li><a href="https://blog.nukosuke.com" className="button"><span className="fa fa-book"></span> ブログ</a></li>
-              <li><a href="https://nukosuke.hatenablog.jp" className="button"><span className="fa fa-book"></span> 旧ブログ</a></li>
+              <li>
+                <a href="https://blog.nukosuke.com" className="button">
+                  <span className="fa fa-book"></span> ブログ
+                </a>
+              </li>
+              <li>
+                <a href="https://nukosuke.hatenablog.jp" className="button">
+                  <span className="fa fa-book"></span> 旧ブログ
+                </a>
+              </li>
             </ul>
           </footer>
         </section>
@@ -124,7 +148,7 @@ const Index: React.FC<PageProps<DataProps>> = (props) => {
       </div>
     </Layout>
   );
-}
+};
 
 export default Index;
 
@@ -132,13 +156,15 @@ export const Head = (props: HeadProps<DataProps>) => (
   <>
     <title>{props.data.site.siteMetadata.title}</title>
   </>
-)
+);
 
 export const query = graphql`
   query {
     site {
       siteMetadata {
-        title description author
+        title
+        description
+        author
       }
     }
   }

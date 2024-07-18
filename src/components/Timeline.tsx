@@ -6,20 +6,18 @@ class Timeline extends React.Component {
     return (
       <>
         <ul className="ln-timeline">
-          { this.props.items.map(item => {
+          {this.props.items.map((item) => {
             return (
               <li className="ln-timeline-item">
                 <div className="ln-timeline-item-tail"></div>
                 <div className="ln-timeline-item-head ln-timeline-item-head-blue"></div>
-                <div className="ln-timeline-item-content">
-                  { item.title }
-                </div>
+                <div className="ln-timeline-item-content">{item.title}</div>
               </li>
-            )
-          }) }
+            );
+          })}
         </ul>
       </>
-    )
+    );
   }
 }
 

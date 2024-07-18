@@ -25,10 +25,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
 
   const result = await graphql<Result>(`
     {
-      allMarkdownRemark(
-        sort: { frontmatter: { date: DESC } },
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 1000) {
         edges {
           node {
             frontmatter {
@@ -41,7 +38,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
   `);
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
   result.data!.allMarkdownRemark.edges.forEach(({ node }) => {
