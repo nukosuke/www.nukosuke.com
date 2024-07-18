@@ -5,8 +5,8 @@ import smoothscroll from 'smoothscroll-polyfill';
 type ScrollProps = {
   type: string;
   element: string;
-  offset: number;
-  timeout: null | undefined;
+  offset?: number;
+  timeout?: null;
   children: React.ReactNode;
 };
 

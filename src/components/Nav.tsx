@@ -15,9 +15,9 @@ const Nav: React.FC<NavProps> = ({ sticky, items }) => (
       currentClassName="is-active"
       offset={-300}
     >
-      {items.map((item) => {
+      {items.map((item, idx) => {
         return (
-          <li>
+          <li key={idx}>
             <Scroll type="id" element={item.key}>
               <a href={`#${item.key}`}>{item.value}</a>
             </Scroll>
