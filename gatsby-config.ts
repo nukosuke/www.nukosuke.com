@@ -12,6 +12,13 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        // scss を完全に除去しないと reset できない
+        resetCSS: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
