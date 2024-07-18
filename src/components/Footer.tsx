@@ -9,7 +9,6 @@ import {
   FaMedium,
 } from 'react-icons/fa6';
 import { SiMatrix, SiQiita, SiZenn } from 'react-icons/si';
-import logo from '../assets/images/logo.svg';
 
 const Footer: React.FC = () => (
   <footer id="footer">
