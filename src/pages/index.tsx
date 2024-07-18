@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+import { useState } from 'react';
 import { Link, graphql, PageProps, HeadProps } from 'gatsby';
 import { Waypoint } from 'react-waypoint';
 
