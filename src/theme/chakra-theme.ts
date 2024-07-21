@@ -1,6 +1,15 @@
 import { extendTheme } from '@chakra-ui/react';
 
 export const chakraTheme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        background:
+          'linear-gradient(-45deg, #73d2f3 25%, #26baee 25%, #26baee 50%, #73d2f3 50%, #73d2f3 75%,	#26baee 75%, #26baee) !important',
+        backgroundSize: '50px 50px !important',
+      },
+    },
+  },
   colors: {
     yellow: {
       50: '#ffe867',
@@ -24,7 +33,7 @@ export const chakraTheme = extendTheme({
       90: '#5f4d93',
     },
   },
-  spacing: {
+  space: {
     'spc.4': '.25rem',
     'spc.6': '.375rem',
     'spc.8': '.5rem',

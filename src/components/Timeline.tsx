@@ -9,9 +9,9 @@ type TimelineProps = {
 const Timeline: React.FC<TimelineProps> = ({ items }) => {
   return (
     <ul className="ln-timeline">
-      {items.map((item) => {
+      {items.map((item, idx) => {
         return (
-          <li className="ln-timeline-item">
+          <li className="ln-timeline-item" key={idx}>
             <div className="ln-timeline-item-tail"></div>
             <div className="ln-timeline-item-head ln-timeline-item-head-blue"></div>
             <div className="ln-timeline-item-content">{item.title}</div>

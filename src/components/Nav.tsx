@@ -1,7 +1,5 @@
 import * as React from 'react';
-//import { Scrollspy } from '@makotot/ghostui';
-import Scrollspy from 'react-scrollspy';
-import Scroll from './Scroll';
+import { Box, HStack, Text, SkipNavLink } from '@chakra-ui/react';
 
 type NavProps = {
   sticky: boolean;
@@ -9,23 +7,15 @@ type NavProps = {
 };
 
 const Nav: React.FC<NavProps> = ({ sticky, items }) => (
-  <nav id="nav" className={sticky ? 'alt' : ''}>
-    <Scrollspy
-      items={items.map((item) => item.key)}
-      currentClassName="is-active"
-      offset={-300}
-    >
-      {items.map((item, idx) => {
-        return (
-          <li key={idx}>
-            <Scroll type="id" element={item.key}>
-              <a href={`#${item.key}`}>{item.value}</a>
-            </Scroll>
-          </li>
-        );
-      })}
-    </Scrollspy>
-  </nav>
+  <Box as="nav" w="full" bg="yellow.60">
+    <HStack spacing="spc.16">
+      {items.map((item, idx) => (
+        <SkipNavLink key={idx} id={item.key}>
+          <Text>{item.value}</Text>
+        </SkipNavLink>
+      ))}
+    </HStack>
+  </Box>
 );
 
 export default Nav;

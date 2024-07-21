@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
       resolve: '@chakra-ui/gatsby-plugin',
       options: {
         // scss を完全に除去しないと reset できない
-        resetCSS: false,
+        resetCSS: true,
       },
     },
     {
