@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import '../assets/scss/main.scss';
+import { Center, Box } from '@chakra-ui/react';
 
 type TemplateProps = {
   children: React.ReactNode;
@@ -17,9 +18,9 @@ const Template: React.FC<TemplateProps> = ({ children }) => {
   }, [setLoading]);
 
   return (
-    <div className={`body ${loading}`}>
-      <div id="wrapper">{children}</div>
-    </div>
+    <Center className={`body ${loading}`}>
+      <Box w={{ base: 'full', md: 'calc(100% - 4em)' }}>{children}</Box>
+    </Center>
   );
 };
 
