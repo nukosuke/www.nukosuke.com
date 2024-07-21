@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import {
   FaBuilding,
   FaBluesky,
@@ -9,63 +8,47 @@ import {
   FaMedium,
 } from 'react-icons/fa6';
 import { SiMatrix, SiQiita, SiZenn } from 'react-icons/si';
+import { Box, Stack, HStack, Text, Link, Center } from '@chakra-ui/react';
 
 const Footer: React.FC = () => (
-  <footer id="footer">
-    <section>
+  <Box as="footer">
+    <Stack>
       <header className="major">
         <h2 className="major">Info</h2>
       </header>
-      <dl className="alt">
-        <dt>
-          <FaBuilding /> Location
-        </dt>
-        <dd>Shibuya-ku Tokyo, Japan</dd>
-      </dl>
-      <ul className="icons">
-        <li>
-          <a href="https://bsky.app/profile/nukosuke.bsky.social">
-            <FaBluesky />
-          </a>
-        </li>
-        <li>
-          <a rel="me" href="https://mastodon.social/@nukosuke">
-            <FaMastodon />
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/pg_nukosuke">
-            <FaXTwitter />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/nukosuke">
-            <FaGithub />
-          </a>
-        </li>
-        <li>
-          <a href="https://matrix.to/#/@nukosuke:matrix.org">
-            <SiMatrix />
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@nukosuke">
-            <FaMedium />
-          </a>
-        </li>
-        <li>
-          <a href="https://qiita.com/nukosuke">
-            <SiQiita />
-          </a>
-        </li>
-        <li>
-          <a href="https://zenn.dev/nukosuke">
-            <SiZenn />
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section>
+      <HStack>
+        <FaBuilding />
+        <Text>Location</Text>
+        <Text>Shibuya-ku Tokyo, Japan</Text>
+      </HStack>
+      <HStack>
+        <Link href="https://bsky.app/profile/nukosuke.bsky.social">
+          <FaBluesky />
+        </Link>
+        <Link rel="me" href="https://mastodon.social/@nukosuke">
+          <FaMastodon />
+        </Link>
+        <Link href="https://x.com/pg_nukosuke">
+          <FaXTwitter />
+        </Link>
+        <Link href="https://github.com/nukosuke">
+          <FaGithub />
+        </Link>
+        <Link href="https://matrix.to/#/@nukosuke:matrix.org">
+          <SiMatrix />
+        </Link>
+        <Link href="https://medium.com/@nukosuke">
+          <FaMedium />
+        </Link>
+        <Link href="https://qiita.com/nukosuke">
+          <SiQiita />
+        </Link>
+        <Link href="https://zenn.dev/nukosuke">
+          <SiZenn />
+        </Link>
+      </HStack>
+    </Stack>
+    <Stack>
       <header className="major">
         <h2>お問い合わせ</h2>
       </header>
@@ -76,9 +59,11 @@ const Footer: React.FC = () => (
         <textarea name="body" required></textarea>
         <button type="submit">送信</button>
       </form>
-    </section>
-    <p className="copyright">&copy; nukosuke.com (*ΦωΦ*)</p>
-  </footer>
+    </Stack>
+    <Center>
+      <Text>&copy; nukosuke.com (*ΦωΦ*)</Text>
+    </Center>
+  </Box>
 );
 
 export default Footer;

@@ -2,7 +2,16 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Link, graphql, PageProps, HeadProps } from 'gatsby';
 import { Waypoint } from 'react-waypoint';
-import { Stack, Card, SkipNavContent } from '@chakra-ui/react';
+import {
+  Stack,
+  Card,
+  SkipNavContent,
+  Image,
+  HStack,
+  Text,
+  Heading,
+} from '@chakra-ui/react';
+import { FaBuilding, FaBriefcase } from 'react-icons/fa6';
 
 import Layout from '../components/layout';
 import Header from '../components/Header';
@@ -51,51 +60,50 @@ const Index: React.FC<PageProps<DataProps>> = (props) => {
         ]}
       />
 
-      <Card px="spc.16">
+      <Card p={16}>
         <Stack>
           <SkipNavContent as="section" id="intro">
             <div className="spotlight">
-              <span className="image left">
-                <img src={avatar} alt="" />
-              </span>
-              <div className="content">
-                <header className="major">
-                  <h2>{siteMetadata.author}</h2>
-                </header>
-                <ul className="icons" style={{ fontSize: 14 }}>
-                  <li>
-                    <span className="fa fa-building-o"></span>&nbsp;&nbsp;mixi
-                    inc.
-                  </li>
-                  <li>
-                    <span className="fa fa-briefcase"></span>
-                    &nbsp;&nbsp;Engineer
-                  </li>
-                </ul>
-                <p>
-                  業務では主にサーバサイドを担当していますが,
-                  実はTypeScriptが好きです.
-                </p>
-                <Timeline
-                  items={[
-                    {
-                      title:
-                        '2011-2015 立命館大学 情報理工学部 情報システム学科',
-                    },
-                    {
-                      title:
-                        '2015-2017 奈良先端科学技術大学院大学(NAIST) 情報科学研究科',
-                    },
-                    { title: '2017-現在 株式会社ミクシィ XFLAGスタジオ' },
-                  ]}
+              <HStack>
+                <Image
+                  src={avatar}
+                  borderRadius="full"
+                  boxSize="16em"
+                  alt="nukosuke"
                 />
-                <footer className="major">
-                  <p style={{ textAlign: 'right' }}>
-                    Resume: [<Link to="/career/resume">JP</Link>|
-                    <Link to="/career/resume_en">EN</Link>]
-                  </p>
-                </footer>
-              </div>
+                <div className="content">
+                  <Heading>{siteMetadata.author}</Heading>
+                  <HStack>
+                    <FaBuilding />
+                    <Text>MIXI inc.</Text>
+                    <FaBriefcase />
+                    <Text>Engineer</Text>
+                  </HStack>
+                  <Text>
+                    業務では主にサーバサイドを担当していますが,
+                    実はTypeScriptが好きです.
+                  </Text>
+                  <Timeline
+                    items={[
+                      {
+                        title:
+                          '2011-2015 立命館大学 情報理工学部 情報システム学科',
+                      },
+                      {
+                        title:
+                          '2015-2017 奈良先端科学技術大学院大学(NAIST) 情報科学研究科',
+                      },
+                      { title: '2017-現在 株式会社ミクシィ XFLAGスタジオ' },
+                    ]}
+                  />
+                  <footer className="major">
+                    <p style={{ textAlign: 'right' }}>
+                      Resume: [<Link to="/career/resume">JP</Link>|
+                      <Link to="/career/resume_en">EN</Link>]
+                    </p>
+                  </footer>
+                </div>
+              </HStack>
             </div>
           </SkipNavContent>
 
