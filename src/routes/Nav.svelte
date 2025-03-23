@@ -1,4 +1,6 @@
 <script lang="ts">
+  import * as m from '$lib/paraglide/messages';
+
   type HeaderProps = { activeSection: string };
   let { activeSection }: HeaderProps = $props();
 
@@ -6,9 +8,9 @@
   const activeClasses = 'bg-white rounded-full text-yellow-700';
 
   const sections = [
-    { targetId: 'sec-profile', title: 'プロフィール' },
-    { targetId: 'sec-job', title: 'しごと' },
-    { targetId: 'sec-blog', title: 'ブログ' },
+    { targetId: 'sec-profile', title: m.section_title_profile() },
+    { targetId: 'sec-job', title: m.section_title_job() },
+    { targetId: 'sec-blog', title: m.section_title_blog() },
   ];
 </script>
 

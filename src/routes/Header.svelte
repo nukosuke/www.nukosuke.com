@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { blur } from 'svelte/transition';
+  import * as m from '$lib/paraglide/messages';
 
   let visible = $state(false);
   onMount(() => (visible = true));
@@ -9,8 +10,8 @@
 <header class="header text-center">
   {#if visible}
     <div in:blur={{ opacity: 500, delay: 100, duration: 400 }}>
-      <h1 class="header-title">じぶんβ</h1>
-      <p class="header-desc">nukosuke's web</p>
+      <h1 class="header-title">{m.site_title()}</h1>
+      <p class="header-desc">{m.site_description()}</p>
     </div>
   {/if}
 </header>

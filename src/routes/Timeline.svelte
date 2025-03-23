@@ -1,18 +1,19 @@
 <script lang="ts">
   import { Circle } from '@lucide/svelte';
+  import * as m from '$lib/paraglide/messages';
 
   const histories = [
     {
       period: '2011-2015',
-      title: '立命館大学 情報理工学部 情報システム学科',
+      title: m.profile_hist_1(),
     },
     {
       period: '2015-2017',
-      title: '奈良先端科学技術大学院大学(NAIST) 情報科学研究科',
+      title: m.profile_hist_2(),
     },
     {
-      period: '2017-現在',
-      title: '株式会社MIXI',
+      period: `2017-${m.profile_hist_period_present()}`,
+      title: m.profile_hist_3(),
     },
   ];
 </script>
