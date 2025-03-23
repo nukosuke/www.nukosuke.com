@@ -5,31 +5,21 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "saturday"
-      time: "10:00"
-      timezone: "Asia/Tokyo"
+      interval: 'weekly'
+      day: 'saturday'
+      time: '10:00'
+      timezone: 'Asia/Tokyo'
     groups:
       website-dependencies:
         patterns:
-          - "*"
-    ignore:
-      # Fix to react v18
-      - dependency-name: "react"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "react-dom"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "@types/react"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "@types/react-dom"
-        update-types: ["version-update:semver-major"]
-  - package-ecosystem: "github-actions"
-    directory: "/"
+          - '*'
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "saturday"
-      time: "10:00"
-      timezone: "Asia/Tokyo"
+      interval: 'weekly'
+      day: 'saturday'
+      time: '10:00'
+      timezone: 'Asia/Tokyo'
