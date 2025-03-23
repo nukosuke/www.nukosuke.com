@@ -52,7 +52,7 @@
 				<a href="https://zenn.dev/nukosuke"><SiZenn size={20} /></a>
 			</div>
 		</div>
-		<form action="https://formspree.io/ox3vtaem@duck.com" method="POST" class="w-full space-y-4">
+		<form action="https://usebasin.com/f/3e3394e83825" method="POST" class="w-full space-y-4">
 			<h3 class="text-lg font-bold">お問い合わせ</h3>
 			<div>
 				<label for="email" class="mb-2 block text-sm font-medium">メールアドレス</label>
