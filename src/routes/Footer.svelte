@@ -13,7 +13,7 @@
 </script>
 
 <footer class="space-y-12 rounded-b bg-[#fff4e0] px-12 py-8 text-gray-700">
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-4">
     <div class="space-y-4">
       <div>
         <h3 class="text-2xl font-bold">じぶんβ</h3>

@@ -6,7 +6,7 @@
   onMount(() => (visible = true));
 </script>
 
-<header class="header">
+<header class="header text-center">
   {#if visible}
     <div in:blur={{ opacity: 500, delay: 100, duration: 400 }}>
       <h1 class="header-title">じぶんβ</h1>

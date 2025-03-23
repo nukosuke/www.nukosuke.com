@@ -18,20 +18,22 @@
   }
 </script>
 
-<div class="space-y-4 py-8">
+<div class="py-8 md:space-y-4">
   <Header />
   <Nav {activeSection} />
 
-  <div class="space-y-12 rounded-sm bg-white pt-12">
+  <div class="space-y-12 rounded-b-sm bg-white pt-12 md:rounded-t-sm">
     <section
       id="sec-profile"
-      class="flex justify-center gap-12 px-12"
+      class="flex flex-col justify-center gap-6 px-12 md:flex-row md:gap-12"
       use:inview={inviewOptions}
       oninview_enter={onInviewEnter}
     >
-      <Avatar />
-      <div class="space-y-4">
-        <div class="space-y-2">
+      <div class="place-self-center">
+        <Avatar />
+      </div>
+      <div class="justify-items-stretch space-y-4 place-self-center md:place-self-start">
+        <div class="space-y-2 text-center">
           <h2 class="text-3xl">ぬこすけ 🍊</h2>
           <ul class="inline-flex gap-4">
             <li class="inline-flex items-center gap-1 text-sm">
@@ -59,7 +61,7 @@
       </h2>
       <div class="space-y-6 py-6">
         <p class="text-center">社内ID・決済基盤や前払い式決済アプリの開発、運用に携っています.</p>
-        <div class="grid grid-cols-3 place-content-stretch gap-4 px-6">
+        <div class="grid grid-cols-1 place-content-stretch gap-12 md:grid-cols-3 md:gap-4 md:px-6">
           <div class="space-y-4 text-center">
             <div class="grid justify-items-stretch space-y-2">
               <CodeXml size="64px" class="justify-self-center text-rose-400" />

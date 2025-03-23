@@ -12,7 +12,9 @@
   ];
 </script>
 
-<nav class="sticky top-0 z-10 rounded-sm bg-[#fff4e0] px-8 py-3 text-sm font-bold">
+<nav
+  class="sticky top-0 z-10 mt-4 rounded-t-sm bg-[#fff4e0] px-8 py-3 text-sm font-bold md:mt-0 md:rounded-b-sm"
+>
   <ul class="inline-flex gap-2">
     {#each sections as sec, index (index)}
       <li class={activeSection === sec.targetId ? [defaultClasses, activeClasses] : defaultClasses}>
