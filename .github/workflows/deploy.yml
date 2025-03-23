@@ -4,14 +4,14 @@ on:
   # Runs on pushes targeting the default branch
   push:
     # TODO: change to main
-    branches: ["master"]
+    branches: ['master']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - run: pnpm lint
-      - name: Build  
+      - name: Build
         run: pnpm build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
