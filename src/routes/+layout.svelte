@@ -3,12 +3,13 @@
   import { locales, localizeHref } from '$lib/paraglide/runtime';
   import '../app.css';
   import './global.scss';
+  import * as m from '$lib/paraglide/messages';
 
   let { children } = $props();
 </script>
 
 <svelte:head>
-  <title>じぶんβ</title>
+  <title>{m.site_title()} | {m.site_description()}</title>
 </svelte:head>
 
 <div class="container mx-auto">

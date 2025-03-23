@@ -10,34 +10,35 @@
     SiQiita,
     SiZenn,
   } from '@icons-pack/svelte-simple-icons';
+  import * as m from '$lib/paraglide/messages';
 </script>
 
 <footer class="space-y-12 rounded-b bg-[#fff4e0] px-12 py-8 text-gray-700">
   <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-4">
     <div class="space-y-4">
       <div>
-        <h3 class="text-2xl font-bold">じぶんβ</h3>
-        <p class="text-md font-semibold">nukosuke's web</p>
+        <h3 class="text-2xl font-bold">{m.site_title()}</h3>
+        <p class="text-md font-semibold">{m.site_description()}</p>
       </div>
       <ul class="space-y-1 text-sm">
         <li>
           <div class="inline-flex gap-2">
             <span class="inline-flex items-center gap-1 font-semibold">
               <MapPin size="1em" />
-              Location
+              {m.footer_location()}
             </span>
             <span>・</span>
-            <p>Shibuya-ku Tokyo, Japan</p>
+            <p>{m.footer_location_value()}</p>
           </div>
         </li>
         <li>
           <div class="inline-flex gap-2">
             <span class="inline-flex items-center gap-1 font-semibold">
               <Clock size="1em" />
-              Timezone
+              {m.footer_timezone()}
             </span>
             <span>・</span>
-            <p>Asia/Tokyo (UTC +09:00)</p>
+            <p>{m.footer_timezone_value()}</p>
           </div>
         </li>
       </ul>
@@ -53,9 +54,11 @@
       </div>
     </div>
     <form action="https://usebasin.com/f/3e3394e83825" method="POST" class="w-full space-y-4">
-      <h3 class="text-lg font-bold">お問い合わせ</h3>
+      <h3 class="text-lg font-bold">{m.footer_contact_form()}</h3>
       <div>
-        <label for="email" class="mb-2 block text-sm font-medium">メールアドレス</label>
+        <label for="email" class="mb-2 block text-sm font-medium"
+          >{m.footer_contact_form_email()}</label
+        >
         <input
           id="email"
           type="email"
@@ -66,7 +69,9 @@
         />
       </div>
       <div>
-        <label for="body" class="mb-2 block text-sm font-medium">本文</label>
+        <label for="body" class="mb-2 block text-sm font-medium"
+          >{m.footer_contact_form_body()}</label
+        >
         <textarea
           id="body"
           name="body"
@@ -78,7 +83,7 @@
         <button
           type="submit"
           class="absolute right-0 cursor-pointer rounded-lg bg-yellow-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-800 focus:ring-4 focus:ring-yellow-700 focus:outline-none sm:w-auto"
-          >送信</button
+          >{m.footer_contact_form_submit()}</button
         >
       </div>
     </form>
