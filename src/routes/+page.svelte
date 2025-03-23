@@ -25,7 +25,7 @@
 	<div class="space-y-12 rounded-sm bg-white pt-12">
 		<section
 			id="sec-profile"
-			class="flex gap-12 px-12"
+			class="flex justify-center gap-12 px-12"
 			use:inview={inviewOptions}
 			oninview_enter={onInviewEnter}
 		>
