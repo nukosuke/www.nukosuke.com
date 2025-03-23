@@ -11,10 +11,11 @@
     rootMargin: '-50%',
   };
 
-  let activeSection = $state<'sec-profile' | 'sec-job' | 'sec-blog'>('sec-profile');
+  type SectionType = 'sec-profile' | 'sec-job' | 'sec-blog';
+  let activeSection = $state<SectionType>('sec-profile');
 
   function onInviewEnter({ detail }: CustomEvent<ObserverEventDetails>) {
-    activeSection = detail.node.id;
+    activeSection = detail.node.id as SectionType;
   }
 </script>
 

@@ -1,5 +1,1 @@
-<script lang="ts">
-  import src from './avatar.png?enhanced&w=256';
-</script>
-
-<enhanced:img {src} alt="nukosuke" class="rounded-sm" />
+<enhanced:img src="./avatar.png?w=256" alt="nukosuke" class="rounded-sm" />
