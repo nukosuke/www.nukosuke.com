@@ -1,5 +1,4 @@
 ---
-path: /career/resume_en/
 title: Resume
 ---
 
