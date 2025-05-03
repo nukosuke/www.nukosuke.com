@@ -16,13 +16,13 @@
     "test": "npm run test:unit -- --run"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.8",
+    "@eslint/compat": "^1.2.9",
     "@eslint/js": "^9.25.1",
     "@icons-pack/svelte-simple-icons": "^5.0.0",
     "@inlang/paraglide-js": "2.0.12",
-    "@lucide/svelte": "^0.503.0",
+    "@lucide/svelte": "^0.507.0",
     "@sveltejs/adapter-static": "^3.0.8",
-    "@sveltejs/enhanced-img": "^0.4.4",
+    "@sveltejs/enhanced-img": "^0.5.0",
     "@sveltejs/kit": "^2.20.7",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "@tailwindcss/container-queries": "^0.1.1",
