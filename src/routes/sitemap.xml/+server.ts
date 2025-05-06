@@ -26,6 +26,6 @@ export const GET: RequestHandler = async () => {
   });
 };
 
-function trimTrailingSlash(path) {
+function trimTrailingSlash(path: string) {
   return path.replace(/\/$/, '');
 }
