@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /career/
+
+Sitemap: https://www.nukosuke.com/sitemap.xml
