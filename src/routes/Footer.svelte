@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { MapPin, Clock } from '@lucide/svelte';
   import {
     SiBluesky,
@@ -14,17 +15,14 @@
 
   // Basin site key
   const recaptchaKey = '6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4';
-  let contactForm: HTMLFormElement;
   let recaptchaToken: string;
-  function handleSubmit(event: SubmitEvent) {
-    event.preventDefault();
+  onMount(() => {
     window.grecaptcha.ready(() => {
       window.grecaptcha.execute(recaptchaKey, { action: 'submit' }).then((t: string) => {
         recaptchaToken = t;
-        contactForm.submit();
       });
     });
-  }
+  });
 </script>
 
 <svelte:head>
@@ -75,13 +73,7 @@
         <a href="https://zenn.dev/nukosuke"><SiZenn size={20} /></a>
       </div>
     </div>
-    <form
-      action="https://usebasin.com/f/3e3394e83825"
-      method="POST"
-      class="w-full space-y-4"
-      bind:this={contactForm}
-      onsubmit={handleSubmit}
-    >
+    <form action="https://usebasin.com/f/3e3394e83825" method="POST" class="w-full space-y-4">
       <h3 class="text-lg font-bold">{m.footer_contact_form()}</h3>
       <div>
         <label for="email" class="mb-2 block text-sm font-medium"
