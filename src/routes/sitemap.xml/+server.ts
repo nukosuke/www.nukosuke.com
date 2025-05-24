@@ -12,8 +12,7 @@ export const GET: RequestHandler = async () => {
       return paths.map(({ path, ...rest }) => {
         const defaultLocPath = localizeHref(path, { locale: 'ja' });
         const alternates = ['en'].map((loc) => {
-          const locPath = localizeHref(path, { locale: loc });
-          return { lang: loc, path: trimTrailingSlash(locPath) };
+          return { lang: loc, path: localizeHref(path, { locale: loc }) };
         });
 
         return {
@@ -25,7 +24,3 @@ export const GET: RequestHandler = async () => {
     },
   });
 };
-
-function trimTrailingSlash(path: string) {
-  return path.replace(/\/$/, '');
-}
