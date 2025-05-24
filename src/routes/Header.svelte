@@ -7,26 +7,11 @@
   onMount(() => (visible = true));
 </script>
 
-<header class="header text-center">
+<header class="min-h-[5rem] text-center font-bold text-white">
   {#if visible}
     <div in:blur={{ opacity: 500, delay: 100, duration: 400 }}>
-      <h1 class="header-title">{m.site_title()}</h1>
-      <p class="header-desc">{m.site_description()}</p>
+      <h1 class="text-[2rem]">{m.site_title()}</h1>
+      <p class="text-[1.25rem]">{m.site_description()}</p>
     </div>
   {/if}
 </header>
-
-<style lang="scss">
-  .header {
-    color: white;
-    font-weight: bold;
-    min-height: 5rem;
-
-    .header-title {
-      font-size: 2rem;
-    }
-    .header-desc {
-      font-size: 1.25rem;
-    }
-  }
-</style>
