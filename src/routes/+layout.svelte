@@ -2,7 +2,6 @@
   import { page } from '$app/state';
   import { locales, localizeHref } from '$lib/paraglide/runtime';
   import '../app.css';
-  import './global.scss';
   import * as m from '$lib/paraglide/messages';
 
   let { children } = $props();
