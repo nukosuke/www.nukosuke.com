@@ -116,7 +116,7 @@
       </div>
       <!-- reCAPTCHA -->
       <input type="hidden" name="g-recaptcha-response" value={recaptchaToken} />
-      <input type="hidden" name="g-recaptcha-version" value="3" />
+      <input type="hidden" name="g-recaptcha-version" value="v3" />
     </form>
   </div>
   <p class="text-center text-sm text-gray-700">&copy; nukosuke.com (*ΦωΦ*)</p>
