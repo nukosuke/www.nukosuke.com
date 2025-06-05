@@ -63,7 +63,7 @@
         </li>
       </ul>
       <div class="inline-flex gap-3 pt-4">
-        <a href="https://bsky.app/profile/nukosuke.bsky.social"><SiBluesky size={20} /></a>
+        <a href="https://bsky.app/profile/nukosuke.com"><SiBluesky size={20} /></a>
         <a href="https://mastodon.social/@nukosuke"><SiMastodon size={20} /></a>
         <a href="https://x.com/pg_nukosuke"><SiX size={20} /></a>
         <a href="https://github.com/nukosuke"><SiGithub size={20} /></a>
