@@ -67,14 +67,14 @@
         </li>
       </ul>
       <div class="inline-flex gap-3 pt-4">
-        <a href="https://bsky.app/profile/nukosuke.com"><SiBluesky size={20} /></a>
-        <a href="https://mastodon.social/@nukosuke"><SiMastodon size={20} /></a>
-        <a href="https://x.com/pg_nukosuke"><SiX size={20} /></a>
-        <a href="https://github.com/nukosuke"><SiGithub size={20} /></a>
-        <a href="https://matrix.to/#/@nukosuke:matrix.org"><SiMatrix size={20} /></a>
-        <a href="https://medium.com/@nukosuke"><SiMedium size={20} /></a>
-        <a href="https://qiita.com/nukosuke"><SiQiita size={20} /></a>
-        <a href="https://zenn.dev/nukosuke"><SiZenn size={20} /></a>
+        <a href="https://bsky.app/profile/nukosuke.com"><SiBluesky size={20} title="Bluesky" /></a>
+        <a href="https://mastodon.social/@nukosuke"><SiMastodon size={20} title="Mastodon" /></a>
+        <a href="https://x.com/pg_nukosuke"><SiX size={20} title="X" /></a>
+        <a href="https://github.com/nukosuke"><SiGithub size={20} title="GitHub" /></a>
+        <a href="https://matrix.to/#/@nukosuke:matrix.org"><SiMatrix size={20} title="Matrix" /></a>
+        <a href="https://medium.com/@nukosuke"><SiMedium size={20} title="Medium" /></a>
+        <a href="https://qiita.com/nukosuke"><SiQiita size={20} title="Qiita" /></a>
+        <a href="https://zenn.dev/nukosuke"><SiZenn size={20} title="Zenn" /></a>
       </div>
     </div>
     <form
