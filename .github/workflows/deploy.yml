@@ -17,6 +17,10 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    env:
+      PUBLIC_GIT_HASH: ${{ github.sha }}
+      PUBLIC_BASIN_FORM_ID: ${{ vars.PUBLIC_BASIN_FORM_ID }}
+      PUBLIC_BASIN_RECAPTCHA_SITE_KEY: ${{ vars.PUBLIC_BASIN_RECAPTCHA_SITE_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4

@@ -11,16 +11,18 @@
     SiQiita,
     SiZenn,
   } from '@icons-pack/svelte-simple-icons';
+  import { PUBLIC_BASIN_FORM_ID, PUBLIC_BASIN_RECAPTCHA_SITE_KEY } from '$env/static/public';
   import * as m from '$lib/paraglide/messages';
 
-  // Basin site key
-  const recaptchaKey = '6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4';
+  // Basin reCAPTCHA setup
   let recaptchaToken: string;
   onMount(() => {
     window.grecaptcha.ready(() => {
-      window.grecaptcha.execute(recaptchaKey, { action: 'submit' }).then((t: string) => {
-        recaptchaToken = t;
-      });
+      window.grecaptcha
+        .execute(PUBLIC_BASIN_RECAPTCHA_SITE_KEY, { action: 'submit' })
+        .then((t: string) => {
+          recaptchaToken = t;
+        });
     });
   });
 </script>
@@ -30,7 +32,9 @@
        Basin + Google reCAPTCHA v3
        https://docs.usebasin.com/guides/spam-protection/#google-recaptcha-v3
   -->
-  <script src="https://www.google.com/recaptcha/api.js?render={recaptchaKey}"></script>
+  <script
+    src="https://www.google.com/recaptcha/api.js?render={PUBLIC_BASIN_RECAPTCHA_SITE_KEY}"
+  ></script>
 </svelte:head>
 
 <footer class="space-y-12 rounded-b bg-[#fff4e0] px-12 py-8 text-gray-700">
@@ -73,7 +77,11 @@
         <a href="https://zenn.dev/nukosuke"><SiZenn size={20} /></a>
       </div>
     </div>
-    <form action="https://usebasin.com/f/3e3394e83825" method="POST" class="w-full space-y-4">
+    <form
+      action="https://usebasin.com/f/{PUBLIC_BASIN_FORM_ID}"
+      method="POST"
+      class="w-full space-y-4"
+    >
       <h3 class="text-lg font-bold">{m.footer_contact_form()}</h3>
       <div>
         <label for="email" class="mb-2 block text-sm font-medium"
