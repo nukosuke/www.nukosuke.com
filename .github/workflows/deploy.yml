@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  pull_request:
   push:
     branches: ['main']
 
@@ -32,11 +32,13 @@ jobs:
       - run: pnpm check
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           path: 'build/'
 
   # Deployment job
   deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
     permissions:
       pages: write
       id-token: write
