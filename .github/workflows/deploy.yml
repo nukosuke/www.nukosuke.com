@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PUBLIC_GIT_HASH: ${{ github.sha }}
+      PUBLIC_GA_MEASUREMENT_ID: ${{ vars.PUBLIC_GA_MEASUREMENT_ID }}
       PUBLIC_BASIN_FORM_ID: ${{ vars.PUBLIC_BASIN_FORM_ID }}
       PUBLIC_BASIN_RECAPTCHA_SITE_KEY: ${{ vars.PUBLIC_BASIN_RECAPTCHA_SITE_KEY }}
     steps:
