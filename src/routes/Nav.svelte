@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* eslint-disable svelte/no-navigation-without-resolve */
   import * as m from '$lib/paraglide/messages';
   import { localizeHref, setLocale } from '$lib/paraglide/runtime';
 
