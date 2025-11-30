@@ -23,7 +23,7 @@ jobs:
       PUBLIC_BASIN_FORM_ID: ${{ vars.PUBLIC_BASIN_FORM_ID }}
       PUBLIC_BASIN_RECAPTCHA_SITE_KEY: ${{ vars.PUBLIC_BASIN_RECAPTCHA_SITE_KEY }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v4
       - name: Setup Node.js
         uses: actions/setup-node@v6
