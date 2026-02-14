@@ -16,7 +16,7 @@ importers:
         version: 9.39.2
       '@icons-pack/svelte-simple-icons':
         specifier: ^6.5.0
-        version: 6.5.0(@sveltejs/kit@2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)
+        version: 6.5.0(@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)
       '@inlang/paraglide-js':
         specifier: 2.8.0
         version: 2.8.0
@@ -25,13 +25,13 @@ importers:
         version: 0.562.0(svelte@5.46.1)
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
-        version: 3.0.10(@sveltejs/kit@2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))
+        version: 3.0.10(@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))
       '@sveltejs/enhanced-img':
         specifier: ^0.9.2
         version: 0.9.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(rollup@4.55.1)(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
       '@sveltejs/kit':
-        specifier: ^2.49.4
-        version: 2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
+        specifier: ^2.49.5
+        version: 2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.2.4
         version: 6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
@@ -681,8 +681,8 @@ packages:
       svelte: ^5.0.0
       vite: ^6.3.0 || >=7.0.0
 
-  '@sveltejs/kit@2.49.4':
-    resolution: {integrity: sha512-JFtOqDoU0DI/+QSG8qnq5bKcehVb3tCHhOG4amsSYth5/KgO4EkJvi42xSAiyKmXAAULW1/Zdb6lkgGEgSxdZg==}
+  '@sveltejs/kit@2.49.5':
+    resolution: {integrity: sha512-dCYqelr2RVnWUuxc+Dk/dB/SjV/8JBndp1UovCyCZdIQezd8TRwFLNZctYkzgHxRJtaNvseCSRsuuHPeUgIN/A==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -1099,6 +1099,9 @@ packages:
 
   devalue@5.6.1:
     resolution: {integrity: sha512-jDwizj+IlEZBunHcOuuFVBnIMPAEHvTsJj0BcIp94xYguLRVBcXO853px/MyIJvbVzWdsGvrRweIUWJw8hBP7A==}
+
+  devalue@5.6.2:
+    resolution: {integrity: sha512-nPRkjWzzDQlsejL1WVifk5rvcFi/y1onBRxjaFMjZeR9mFpqu2gmAZ9xUB9/IEanEP/vBtGeGganC/GO1fmufg==}
 
   directory-tree@3.5.2:
     resolution: {integrity: sha512-DsOqeZEHkZnZrVOJG3mE/J9M6J8PulImiC6I1ZpoprVlfno8GvLOPDMkxiJihklLK7B9aVudG463L1+S/kzjiw==}
@@ -2279,9 +2282,9 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@icons-pack/svelte-simple-icons@6.5.0(@sveltejs/kit@2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)':
+  '@icons-pack/svelte-simple-icons@6.5.0(@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)':
     dependencies:
-      '@sveltejs/kit': 2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
+      '@sveltejs/kit': 2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
       svelte: 5.46.1
 
   '@img/colour@1.0.0': {}
@@ -2538,9 +2541,9 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))':
+  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))':
     dependencies:
-      '@sveltejs/kit': 2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
+      '@sveltejs/kit': 2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))
 
   '@sveltejs/enhanced-img@0.9.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(rollup@4.55.1)(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))':
     dependencies:
@@ -2555,7 +2558,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@sveltejs/kit@2.49.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))':
+  '@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.46.1)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0)))(svelte@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.13.11)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.89.0)(yaml@2.7.0))':
     dependencies:
       '@standard-schema/spec': 1.1.0
       '@sveltejs/acorn-typescript': 1.0.8(acorn@8.15.0)
@@ -2563,7 +2566,7 @@ snapshots:
       '@types/cookie': 0.6.0
       acorn: 8.15.0
       cookie: 0.6.0
-      devalue: 5.6.1
+      devalue: 5.6.2
       esm-env: 1.2.2
       kleur: 4.1.5
       magic-string: 0.30.21
@@ -2968,6 +2971,8 @@ snapshots:
   detect-libc@2.1.2: {}
 
   devalue@5.6.1: {}
+
+  devalue@5.6.2: {}
 
   directory-tree@3.5.2:
     dependencies:
